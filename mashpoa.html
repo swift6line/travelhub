@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Mashpoa Company - We are here to take you there.">
+    <title>Mashpoa Company</title>
+    <link rel="stylesheet" href="mashpoastyles.css">
+    <script src="mashpoascript.js" defer></script>
+</head>
+
+<body>
+    <!-- Mashpoa Section -->
+    <div id="mashpoa" class="bus-company">
+        <!-- Header with Background Image -->
+        <header style="background: url('mashpoa-header-bg.jpg') no-repeat center center/cover; color: navy; text-align: center; padding: 40px;">
+            <img src="mashpoalogo.png" alt="Mashpoa Logo" style="width: 150px; margin-bottom: 20px;">
+            <h1>MASHPOA COMPANY</h1>
+            <p style="font-style: italic; font-size: 1.2em;">"We lead the leader"</p>
+        </header>
+
+        <!-- Overview -->
+        <section class="overview">
+            <h2>About Us</h2>
+            <p>Mashpoa is a premier transportation company, committed to providing top-notch travel services with a focus on safety, luxury, and reliability. Our aim is to redefine travel with unmatched customer satisfaction.</p>
+        </section>
+
+        <!-- Fleet Details -->
+        <section class="fleet-details">
+            <h2>Our Fleet</h2>
+            <p>Our luxurious fleet of buses offers superior amenities to ensure an exceptional travel experience, including:</p>
+            <ul>
+                <li>Onboard entertainment systems</li>
+                <li>Air conditioning</li>
+                <li>Comfortable reclining seats</li>
+                <li>USB charging ports</li>
+                <li>Refreshments</li>
+            </ul>
+        </section>
+
+        <!-- Popular Routes with Background -->
+        <section class="routes" style="background: url('mashpoa-routes-bg.jpg') no-repeat center center/cover; padding: 20px; color: white;">
+            <h2>Popular Routes</h2>
+            <table style="background-color: rgba(0, 0, 0, 0.7); color: white; margin: 20px auto;">
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Fare (Ksh)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nairobi ↔ Mombasa</td>
+                        <td>1,500</td>
+                    </tr>
+                    <tr>
+                        <td>Nairobi ↔ Kisumu</td>
+                        <td>2,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mombasa ↔ Kampala</td>
+                        <td>3,000</td>
+                    </tr>
+                    <tr>
+                        <td>Nairobi ↔ Malindi</td>
+                        <td>2,000</td>
+                    </tr>
+                    <tr>
+                        <td>Nairobi ↔ Arusha</td>
+                        <td>3,500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Booking Form -->
+        <section class="booking">
+            <h2>Book Your Journey</h2>
+            <form id="mashpoa-form" class="booking-form" onsubmit="handleBooking(event, 'Mashpoa')">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="busCompany">Bus Company</label>
+                <select id="busCompany" name="busCompany" required>
+                    <option value="Mashpoa">Mashpoa</option>
+                </select>
+
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="seat">Select Seat</label>
+                <select id="seat" name="seat" required>
+                    <!-- Dynamically adding 49 seat options -->
+                    <option value="1A">1A</option>
+                    <option value="1B">1B</option>
+                    <option value="49A">49A</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <!-- Media Showcase -->
+        <section class="media-showcase">
+            <h2>Gallery</h2>
+            <div class="bus-gallery">
+                <img src="mashpoaimage1.jpg" alt="Mashpoa Bus 1">
+                <img src="mashpoaimage2.jpg" alt="Mashpoa Bus 2">
+                <img src="mashpoaimage3.jpg" alt="Mashpoa Bus 3">
+                <img src="mashpoaimage4.jpg" alt="Mashpoa Bus 4">
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: info@mashpoa.com</p>
+            <p>Phone: +254 700 765 432</p>
+            <p>Address: Nairobi, Kenya</p>
+        </section>
+    </div>
+    <a href="index.html"><button>Back to Homepage</button></a>
+</body>
+
+</html>

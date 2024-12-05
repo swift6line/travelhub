@@ -1,0 +1,218 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #003366;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    background: url('tahmeed-header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    background-size: cover;
+}
+
+header img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* Overview Section */
+.overview {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.overview h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.overview p {
+    font-size: 1.1em;
+}
+
+/* Fleet Details Section */
+.fleet-details {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.fleet-details h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.fleet-details ul {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.fleet-details li {
+    margin: 10px 0;
+}
+
+/* Routes Section */
+.routes {
+    background: url('tahmeed-routes-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.routes h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.routes table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.routes th, .routes td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.routes tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Booking Form */
+.booking {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.booking-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+.booking-form input, .booking-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1em;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Showcase */
+.media-showcase {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.media-showcase h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.bus-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bus-gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contact Information */
+.contact-info {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bus-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}

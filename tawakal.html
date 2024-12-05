@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Tawakal Coach Bus Company - We provide safe, comfortable, and reliable travel.">
+    <title>Tawakal Coach Bus Company</title>
+    <link rel="stylesheet" href="tawakalcoachstyles.css">
+    <script src="tawakalcoachscript.js" defer></script>
+</head>
+
+<body>
+    <!-- Tawakal Coach Section -->
+    <div id="tawakalcoach" class="bus-company">
+        <!-- Header with Background Image -->
+        <header style="background: url('tawakalcoach-header-bg.jpg') no-repeat center center/cover; color: white; text-align: center; padding: 60px 20px;">
+            <img src="tawakalcoachlogo.png" alt="Tawakal Coach Logo" style="width: 150px; margin-bottom: 20px;">
+            <h1>TAWAKAL COACH BUS COMPANY</h1>
+            <p style="font-style: italic; font-size: 1.2em;">"Your Journey, Our Responsibility"</p>
+        </header>
+
+        <!-- Overview -->
+        <section class="overview">
+            <h2>About Us</h2>
+            <p>Tawakal Coach is dedicated to offering a reliable and safe transportation service across East Africa. We focus on customer comfort and satisfaction, providing top-notch amenities and excellent service on every journey.</p>
+        </section>
+
+        <!-- Fleet Details -->
+        <section class="fleet-details">
+            <h2>Our Fleet</h2>
+            <p>Our fleet includes modern, spacious, and well-maintained buses designed for your comfort, featuring:</p>
+            <ul>
+                <li>Fully air-conditioned buses</li>
+                <li>Reclining and spacious seats</li>
+                <li>In-bus entertainment systems</li>
+                <li>USB charging ports</li>
+                <li>Complimentary refreshments</li>
+            </ul>
+        </section>
+
+        <!-- Popular Routes with Background -->
+        <section class="routes" style="background: url('tawakalcoach-routes-bg.jpg') no-repeat center center/cover; padding: 20px; color: white;">
+            <h2>Popular Routes</h2>
+            <table style="background-color: rgba(0, 0, 0, 0.7); color: white; margin: 20px auto;">
+                <thead>
+                    <tr>
+                        <th>Route</th>
+                        <th>Fare (Ksh)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nairobi ↔ Mombasa</td>
+                        <td>1,400</td>
+                    </tr>
+                    <tr>
+                        <td>Nairobi ↔ Kisumu</td>
+                        <td>1,900</td>
+                    </tr>
+                    <tr>
+                        <td>Mombasa ↔ Arusha</td>
+                        <td>2,800</td>
+                    </tr>
+                    <tr>
+                        <td>Nairobi ↔ Malindi</td>
+                        <td>1,800</td>
+                    </tr>
+                    <tr>
+                        <td>Nairobi ↔ Mwanza</td>
+                        <td>2,400</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Booking Form -->
+        <section class="booking">
+            <h2>Book Your Journey</h2>
+            <form id="tawakalcoach-form" class="booking-form" onsubmit="handleBooking(event, 'Tawakal Coach')">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="busCompany">Bus Company</label>
+                <select id="busCompany" name="busCompany" required>
+                    <option value="Tawakal Coach">Tawakal Coach</option>
+                </select>
+
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="seat">Select Seat</label>
+                <select id="seat" name="seat" required>
+                    <!-- Dynamically adding 49 seat options -->
+                    <option value="1A">1A</option>
+                    <option value="1B">1B</option>
+                    <option value="49A">49A</option>
+                </select>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <!-- Media Showcase -->
+        <section class="media-showcase">
+            <h2>Gallery</h2>
+            <div class="bus-gallery">
+                <img src="tawakalimage1.jpg" alt="Tawakal Coach Bus 1">
+                <img src="tawakalimage2.jpg" alt="Tawakal Coach Bus 2">
+                <img src="tawakalimage3.jpg" alt="Tawakal Coach Bus 3">
+                <img src="tawakalimage4.jpg" alt="Tawakal Coach Bus 4">
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: info@tawakalcoach.co.ke</p>
+            <p>Phone: +254 700 765 432</p>
+            <p>Address: Nairobi, Kenya</p>
+        </section>
+    </div>
+    <a href="index.html"><button>Back to Homepage</button></a>
+</body>
+
+</html>
